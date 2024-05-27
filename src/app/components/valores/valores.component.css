@@ -1,7 +1,8 @@
 .card {
   width: 100%;
+  max-width: 500px;
   height: 420px;
-  margin: 20px;
+  margin: 20px auto;
   border-radius: 6px;
   overflow: hidden;
   background-color: #fff;
@@ -9,7 +10,6 @@
   cursor: default;
   transition: all 400ms ease;
 }
-
 .card:hover {
   box-shadow: 50px 5px 20px rgba(0,0,0,0.1);
   transform: translateY(-3%);
@@ -54,8 +54,8 @@ h5 {
   }
 
   .col {
-    width: 100%;
-    margin: 0;
+    width: calc(100% - 40px); /* Ajustar el ancho de la columna para tener en cuenta los márgenes */
+    margin: 0 auto; /* Centrar la columna */
   }
 
   .card {
