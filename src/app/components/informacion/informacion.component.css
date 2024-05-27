@@ -6,27 +6,6 @@ html {
   height: 100%;
 }
 
-.container {
-  position: relative;
-  width: 100%;
-
-
-}
-
-
-.image-container {
-  position: relative;
-  width: 100%;
-  display: inline-block;
-
-}
-
-.image-container img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
 .text {
   position: absolute;
   bottom: 80px;
@@ -136,6 +115,21 @@ li{
   color: white;
   text-shadow: 2px 2px 4px #000000;
 }
+.btn-primary {
+  width: 100%;
+  padding: 10px;
+  background-color: #002947;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
 
 
 
