@@ -17,6 +17,7 @@ html {
   position: relative;
   width: 100%;
   display: inline-block;
+
 }
 
 .image-container img {
@@ -27,7 +28,7 @@ html {
 
 .text {
   position: absolute;
-  bottom: 10px;
+  bottom: 80px;
   right: 30px;
   font-size: 120px;
   font-weight: bolder;
