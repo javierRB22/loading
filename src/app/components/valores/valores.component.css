@@ -54,8 +54,8 @@ h5 {
   }
 
   .col {
-    width: calc(100% - 40px); /* Ajustar el ancho de la columna para tener en cuenta los márgenes */
-    margin: 0 auto; /* Centrar la columna */
+    width: calc(100% - 40px);
+    margin: 0 auto;
   }
 
   .card {
