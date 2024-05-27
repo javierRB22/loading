@@ -147,3 +147,27 @@ h4{
 }
 
 
+
+@media screen and (max-width: 576px) {
+  .col {
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
+
+  .contenedor figure {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .contenedor figure .capa {
+    padding: 10px;
+  }
+
+  .contenedor figure .capa h2,
+  .contenedor figure .capa h4,
+  .contenedor figure .capa p {
+    font-size: 14px;
+  }
+}
+
+

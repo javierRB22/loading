@@ -1,25 +1,13 @@
 
-p{
+p {
   cursor: default;
-}
-h3{
-  cursor: default;
-}
-
-.text {
-  position: absolute;
-  bottom: 400px;
-  right: 750px;
-  font-size: 120px;
   font-weight: bolder;
   color: white;
-  text-shadow: 2px 2px 4px #000000;
-  cursor: default;
-
-}
-p{
-  cursor: default;
-  font-weight: bolder;
-  color:white;
   font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+H1{
+  font-weight: bolder;
+  font-size: 8rem;
 }
