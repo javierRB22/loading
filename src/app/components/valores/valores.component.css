@@ -31,6 +31,7 @@ body {
 
 h1 {
   color: rgb(20,44,69);
+  cursor: default;
 }
 
 .card .card-body p {

@@ -7,9 +7,10 @@ p {
   font-weight: bolder;
 }
 
-H1{
+h1{
   font-weight: bolder;
   font-size: 8rem;
+  cursor: default;
 }
 
 .carousel-item {

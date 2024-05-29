@@ -42,3 +42,15 @@ h5 {
   }
 }
 
+/* Estilo para el icono SVG */
+.bi-envelope {
+  transition: transform 0.3s ease, fill 0.3s ease; /* Transiciones para animación y cambio de color */
+}
+
+/* Estilo para el icono SVG al pasar el cursor */
+.bi-envelope:hover {
+  transform: translateY(-5px); /* Movimiento hacia arriba */
+  fill: #007bff; /* Cambio de color al pasar el cursor */
+}
+
+
