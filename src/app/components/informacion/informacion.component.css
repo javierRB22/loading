@@ -1,4 +1,3 @@
-
 html {
   margin: 0;
   padding: 0;
@@ -18,19 +17,20 @@ html {
 
 }
 
-h1{
-  color: rgb(20,44,69);
+h1 {
+  color: rgb(20, 44, 69);
   cursor: default;
   font-size: 50px;
   font-weight: bolder;
 
 }
 
-.card{
+.card {
   border: none;
-  width: 40px ;
+  width: 40px;
 }
-li{
+
+li {
   font-size: larger;
   font-size: 20px;
   font-weight: bolder;
@@ -115,6 +115,7 @@ li{
   color: white;
   text-shadow: 2px 2px 4px #000000;
 }
+
 .btn-primary {
   width: 100%;
   padding: 10px;
@@ -130,7 +131,10 @@ li{
   background-color: #0056b3;
 }
 
-
-
-
-
+.card-img-top.rounded {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+}
