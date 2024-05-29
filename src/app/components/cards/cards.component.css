@@ -27,6 +27,7 @@ body {
   margin-bottom: 20px;
   color: rgb(22,44,69);
   font-weight: bolder;
+  cursor: default;
 }
 
 .contenedor {
@@ -187,8 +188,15 @@ h4{
 .social-icons a svg {
   width: 40px;
   height: 40px;
+  fill: #fff;
+  transition: fill 0.3s ease, transform 0.3s ease; ;
+
 }
 
+.social-icons a:hover svg {
+  fill: #007bff;
+  transform: translateY(-5px);
+}
 
 
 

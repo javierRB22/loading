@@ -59,6 +59,7 @@
   font-size: 2rem;
   transition: margin-top 400ms ease-out, margin-bottom 400ms ease-out;
   margin: 30px 0;
+  cursor: default;
 }
 
 .image:hover .capa h3 {
@@ -76,6 +77,7 @@
   border-left: 2px solid #fff;
   border-right: 2px solid #fff;
   box-sizing: border-box;
+  cursor: default;
 }
 
 
