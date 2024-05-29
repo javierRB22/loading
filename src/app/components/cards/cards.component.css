@@ -202,3 +202,78 @@ h4 {
 .social-icons a {
   margin: 0 15px;
 }
+
+.social-icons {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.social-icons a svg {
+  width: 40px;
+  height: 40px;
+  fill: #fff;
+  transition: fill 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a {
+  margin: 0 15px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.social-icons a svg {
+  width: 40px;
+  height: 40px;
+  fill: #fff;
+  transition: fill 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a {
+  margin: 0 15px;
+}
+
+.social-icons a.facebook:hover svg {
+  fill: #3b5998;
+}
+
+.social-icons a.twitter:hover svg {
+  fill: #1da1f2;
+}
+
+.social-icons a.instagram:hover svg {
+  fill: #e1306c;
+}
+
+.social-icons a.linkedin:hover svg {
+  fill: #0077b5;
+}
+
+.social-icons a.youtube:hover svg {
+  fill: #ff0000;
+}
+
+.social-icons a.playstore:hover svg {
+  fill: #34a853;
+}
+
+/* Ejemplo de icono */
+.social-icons a.facebook,
+.social-icons a.twitter,
+.social-icons a.instagram,
+.social-icons a.linkedin,
+.social-icons a.youtube,
+.social-icons a.playstore {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+
+
