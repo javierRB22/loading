@@ -1,0 +1,30 @@
+.navbar {
+  background-color: #002b49;
+  transition: background-color 0.3s;
+}
+
+
+.navbar-nav .nav-link:hover {
+  transform: scale(1.1);
+}
+
+
+@keyframes move-up {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-3px); }
+}
+
+
+.navbar-nav .nav-link:hover {
+  animation: move-up 0.3s ease;
+}
+
+
+.navbar-nav .nav-link:hover {
+  transform: translateY(-3px);
+}
+
+
+.navbar-nav .nav-item:not(:last-child) .nav-link {
+  margin-right: 10px;
+}
