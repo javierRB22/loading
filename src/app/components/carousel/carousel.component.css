@@ -11,3 +11,8 @@ H1{
   font-weight: bolder;
   font-size: 8rem;
 }
+
+.carousel-item {
+  transition-duration: 0.5s;
+}
+
