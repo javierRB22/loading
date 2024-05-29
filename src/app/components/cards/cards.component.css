@@ -175,6 +175,18 @@ h4{
   }
 }
 
+.social-icons {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+
 
 
 
