@@ -1,7 +1,7 @@
 .navbar {
-  background-color: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
-  transition: background-color 0.3s, backdrop-filter 0.3s;
+  background-color: rgba(128, 128, 128, 0.5); /* Gray with 50% opacity */
+  backdrop-filter: blur(10px); /* Blur effect */
+  transition: background-color 0.3s, backdrop-filter 0.3s; /* Smooth transition for both background color and blur effect */
 }
 
 .navbar-nav .nav-link:hover {
