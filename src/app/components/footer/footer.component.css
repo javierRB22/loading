@@ -10,6 +10,11 @@
 
 .col {
   text-align: center;
+  position: relative;
+}
+
+.border-right {
+  border-right: 2px solid #e7e7e7;
 }
 
 .col ul {
@@ -40,14 +45,13 @@ h5 {
     width: 100%;
     margin-bottom: 20px;
     text-align: center;
+    border-right: none;
   }
 }
-
 
 .bi-envelope {
   transition: transform 0.3s ease, fill 0.3s ease;
 }
-
 
 .bi-envelope:hover {
   transform: translateY(-5px);
