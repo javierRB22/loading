@@ -52,7 +52,7 @@ body {
 .contenedor figure {
   position: relative;
   height: 480px;
-  max-height: 100%;
+  max-height: 500%;
   width: 100%;
   cursor: pointer;
   overflow: hidden;
@@ -75,6 +75,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
+  /* max-height: 100%; */
   background: rgba(0, 0, 0, 0.7);
   transition: all 400ms ease-out;
   opacity: 0;
@@ -90,6 +91,7 @@ body {
 .contenedor figure:hover>.capa {
   opacity: 1;
   visibility: visible;
+  /* padding: 10px; */
 }
 
 .contenedor figure:hover>img {
@@ -160,11 +162,13 @@ h4 {
   }
 
   .contenedor figure {
-    height: auto;
-    max-width: 100%;
+    height: 21rem;
+    /* max-width: 100%; */
   }
 
   .contenedor figure .capa {
+    width: 100%;
+    height: 100%;
     padding: 10px;
   }
 
@@ -274,6 +278,3 @@ h4 {
   width: 40px;
   height: 40px;
 }
-
-
-
