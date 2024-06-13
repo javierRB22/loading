@@ -6,6 +6,7 @@
 
 .navbar-brand img {
   max-height: 100%;
+  flex: 0 1 auto;
 }
 
 .navbar-nav .nav-link:hover {
@@ -45,9 +46,7 @@
   align-items: center;
 }
 
-.navbar-brand {
-  flex: 0 1 auto;
-}
+
 
 .navbar-collapse {
   flex: 1 1 auto;
