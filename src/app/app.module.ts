@@ -1,28 +1,27 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
+import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { SharedModule } from './shared/shared.module';
+
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { FooterComponent } from './components/footer/footer.component';
 import { CardsComponent } from './components/cards/cards.component';
 
-import { HomeComponent } from './pages/home/home.component';
-import { RouterModule } from '@angular/router';
-import { CommonModule } from '@angular/common';
-import { ContactoComponent } from './pages/contacto/contacto.component';
-import { NuestrosValoresComponent } from './pages/nuestros-valores/nuestros-valores.component';
+
 import { CarouselComponent } from './components/carousel/carousel.component';
-import { MisionVisionComponent } from './components/mision-vision/mision-vision.component';
+import { ContactoComponent } from './pages/contacto/contacto.component';
+import { HomeComponent } from './pages/home/home.component';
 import { InformacionComponent } from './components/informacion/informacion.component';
+import { MisionVisionComponent } from './components/mision-vision/mision-vision.component';
+import { NuestrosValoresComponent } from './pages/nuestros-valores/nuestros-valores.component';
 import { ValoresComponent } from './components/valores/valores.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    FooterComponent,
     CardsComponent,
+
 
     HomeComponent,
       ContactoComponent,
@@ -36,7 +35,8 @@ import { ValoresComponent } from './components/valores/valores.component';
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    CommonModule
+    CommonModule,
+    SharedModule
 
   ],
   providers: [],
