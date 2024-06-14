@@ -27,30 +27,37 @@
     <hr>
     <h1 class="mt-4 mb-4 text-center">FORMULARIO DE CONTACTO</h1><br>
     <div class="container">
-      <form>
+      <form [formGroup]="myForm" (ngSubmit)="onSave()" autocomplete="off">
         <div class="form-floating mb-3">
-          <input type="text" class="form-control" id="floatingName" placeholder="name">
+          <input type="text" class="form-control" formControlName="name" id="floatingName" placeholder="nombres">
           <label for="floatingName">Nombres y apellidos completos</label>
+          <span *ngIf="isValidField('name')" class="form-text text-danger"> {{getFieldError('name')}}</span>
         </div>
         <div class="form-floating mb-3">
-          <input type="email" class="form-control" id="floatingEmail" placeholder="email">
+          <input type="email" class="form-control" formControlName="email" id="floatingEmail" placeholder="email">
           <label for="floatingEmail">Correo electrónico</label>
+          <span *ngIf="isValidField('email')" class="form-text text-danger"> {{getFieldError('email')}}</span>
         </div>
         <div class="form-floating mb-3">
-          <input type="number" class="form-control" id="floatingPhone" placeholder="number">
+          <input type="number" class="form-control" formControlName="telefono" id="floatingPhone" placeholder="number">
           <label for="floatingPhone">Número de teléfono</label>
+          <span *ngIf="isValidField('telefono')" class="form-text text-danger">Minimo 1 caracter</span>
         </div>
         <div class="form-floating mb-3">
-          <input type="number" class="form-control" id="floatingID" placeholder="number">
+          <input type="number" class="form-control" formControlName="cedula" id="floatingID" placeholder="number">
           <label for="floatingID">Número de cédula</label>
+          <span *ngIf="isValidField('cedula')" class="form-text text-danger">Minimo 1 caracter</span>
         </div>
         <div class="form-floating mb-3">
-          <input type="text" class="form-control" id="floatingLocation" placeholder="text">
+          <input type="text" class="form-control" formControlName="lugar" id="floatingLocation" placeholder="text">
           <label for="floatingLocation">Desde donde nos contacta</label>
+          <span *ngIf="isValidField('lugar')" class="form-text text-danger"> {{getFieldError('lugar')}}</span>
         </div>
         <div class="form-floating mb-3">
-          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+          <textarea class="form-control" formControlName="comentario" placeholder="Leave a comment here"
+            id="floatingTextarea2" style="height: 100px"></textarea>
           <label for="floatingTextarea2">Comentarios</label>
+          <span *ngIf="isValidField('comentario')" class="form-text text-danger"> {{getFieldError('comentario')}}</span>
         </div>
         <div class="mb-3 form-check">
           <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1"> -->
