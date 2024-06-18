@@ -1,67 +1,82 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-
-const formulario = {
-
-}
-
+import { ContactService } from '../../services/mail.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-informacion',
   templateUrl: './informacion.component.html',
-  styleUrl: './informacion.component.css'
+  styleUrls: ['./informacion.component.css']
 })
 export class InformacionComponent implements OnInit {
+  public myForm: FormGroup;
+  public sendingForm: boolean = false;
 
-  public myForm: FormGroup = this.fb.group({
-    name: ['', [Validators.required, Validators.minLength(6)]],
-    email: ['', [Validators.required, Validators.minLength(6)]],
-    telefono: [0,[Validators.required, Validators.min(0)]],
-    cedula: [0,[Validators.required, Validators.min(0)]],
-    lugar: ['', [Validators.required, Validators.minLength(6)]],
-    comentario: ['', [Validators.required, Validators.minLength(6)]],
-  })
-
-  constructor ( private fb: FormBuilder){}
-
+  constructor(private fb: FormBuilder, private emailService: ContactService) {
+    this.myForm = this.fb.group({
+      name: ['', [Validators.required, Validators.minLength(6)]],
+      email: ['', [Validators.required, Validators.email]],
+      telefono: [null, [Validators.required, Validators.min(1)]],
+      cedula: [null, [Validators.required, Validators.min(1)]],
+      lugar: ['', [Validators.required, Validators.minLength(6)]],
+      comentario: ['', [Validators.required, Validators.minLength(6)]]
+    });
+  }
 
   ngOnInit(): void {
-    // this.myForm.reset()
   }
 
-  isValidField (field: string): boolean | null{
-    return this.myForm.controls [field].errors && this.myForm.controls[field].touched;
+  isValidField(field: string): boolean | null {
+    return this.myForm.controls[field].invalid && (this.myForm.controls[field].touched || this.myForm.controls[field].dirty);
   }
 
-  getFieldError(field: string):string | null {
+  getFieldError(field: string): string | null {
+    if (!this.myForm.controls[field]) return null;
 
-  if (!this.myForm.controls[field]) return  null;
+    const errors = this.myForm.controls[field].errors;
 
-  const errors = this.myForm.controls[field].errors || {};
-
-  for (const key of Object.keys(errors)) {
-
-    switch( key) {
-      case 'required': return 'Este campo es requerido'
-      case 'minlength': return `Mínimo ${ errors['minlength'].requiredLength} caracters.`;
+    if (errors) {
+      if (errors['required']) {
+        return 'Este campo es requerido';
+      } else if (errors['minlength']) {
+        return `Mínimo ${errors['minlength'].requiredLength} caracteres.`;
+      } else if (errors['email']) {
+        return 'Debe ser un correo electrónico válido';
+      }
     }
 
-  }
-  return null;
-
+    return null;
   }
 
-  onSave(): void{
+  onSave(): void {
+    if (this.myForm.invalid) {
+      this.showAlert('Por favor, llena todos los campos correctamente.', 'warning');
+      return;
+    }
 
-   if (this.myForm.invalid) {
-    this.myForm.markAllAsTouched();
-    return;
-   }
+    this.sendingForm = true;
 
-    console.log(this.myForm.value);
-
-    this.myForm.reset({telefono: 0, cedula: 0});
+    this.emailService.enviarCorreo(this.myForm.value).subscribe(
+      (response: any) => {
+        this.showAlert('Formulario enviado exitosamente', 'success');
+        console.log('Formulario enviado exitosamente', response);
+        this.myForm.reset({ telefono: null, cedula: null });
+        this.sendingForm = false;
+      },
+      (error: any) => {
+        console.error('Error al enviar el formulario', error);
+        this.showAlert('Error al enviar el formulario', 'error');
+        this.sendingForm = false;
+      }
+    );
   }
 
-
+  private showAlert(message: string, type: 'success' | 'error' | 'warning'): void {
+    Swal.fire({
+      icon: type,
+      title: message,
+      showConfirmButton: false,
+      timer: 3000 // Duración de la alerta en milisegundos
+    });
+  }
 }

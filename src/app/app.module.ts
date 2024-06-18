@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
-import { ReactiveModule } from './reactive/reactive.module';
 import { SharedModule } from './shared/shared.module';
 
 
@@ -19,20 +18,22 @@ import { InformacionComponent } from './components/informacion-contacto/informac
 import { MisionVisionComponent } from './components/mision-vision/mision-vision.component';
 import { NuestrosValoresComponent } from './pages/nuestros-valores/nuestros-valores.component';
 import { ValoresComponent } from './components/valores/valores.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     CardsComponent,
-
-
     HomeComponent,
       ContactoComponent,
       NuestrosValoresComponent,
       CarouselComponent,
       MisionVisionComponent,
       InformacionComponent,
-      ValoresComponent
+      ValoresComponent,
+
+
   ],
   imports: [
     BrowserModule,
@@ -41,7 +42,7 @@ import { ValoresComponent } from './components/valores/valores.component';
     CommonModule,
     SharedModule,
     ReactiveFormsModule,
-    ReactiveModule
+    HttpClientModule
 
   ],
   providers: [],

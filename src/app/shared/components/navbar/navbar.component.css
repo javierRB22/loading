@@ -5,14 +5,6 @@
   transition: background-color 0.3s, backdrop-filter 0.3s;
 }
 
-.navbar-brand img {
-  max-height: 100%;
-  flex: 0 1 auto;
-}
-
-.navbar-nav .nav-link:hover {
-  transform: scale(1.1);
-}
 
 @keyframes move-up {
   0% {
@@ -32,7 +24,7 @@
 }
 
 .navbar-nav .nav-item:not(:last-child) .nav-link {
-  margin-right: 10px;
+  margin-right: 60px;
   cursor: pointer;
 }
 
@@ -41,21 +33,6 @@
   font-weight: bolder;
 }
 
-.container-fluid {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 
 
-.navbar-collapse {
-  flex: 1 1 auto;
-  display: flex;
-  justify-content: center;
-}
-
-.navbar-nav {
-  display: flex;
-  justify-content: center;
-}
