@@ -20,6 +20,11 @@ import { NuestrosValoresComponent } from './pages/nuestros-valores/nuestros-valo
 import { ValoresComponent } from './components/valores/valores.component';
 import { HttpClientModule } from '@angular/common/http';
 
+import { RangerComponent } from './components/lineas/ranger/ranger.component';
+import { PromocionalesComponent } from './components/lineas/promocionales/promocionales.component';
+import { LicoresComponent } from './components/lineas/licores/licores.component';
+import { NuestraHistoriaComponent } from './components/nuestra-historia/nuestra-historia.component';
+
 
 @NgModule({
   declarations: [
@@ -32,6 +37,13 @@ import { HttpClientModule } from '@angular/common/http';
       MisionVisionComponent,
       InformacionComponent,
       ValoresComponent,
+      RangerComponent,
+      PromocionalesComponent,
+      LicoresComponent,
+      RangerComponent,
+      PromocionalesComponent,
+      LicoresComponent,
+      NuestraHistoriaComponent
 
 
   ],
@@ -42,7 +54,8 @@ import { HttpClientModule } from '@angular/common/http';
     CommonModule,
     SharedModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+
 
   ],
   providers: [],

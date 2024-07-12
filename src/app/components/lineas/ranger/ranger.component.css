@@ -1,0 +1,30 @@
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  transition: color 0.3s;
+  font-size: 24px; /* Aumenta el tamaño de los iconos */
+}
+
+.social-icons .facebook:hover {
+  color: #3b5998; /* Color de Facebook */
+}
+
+.social-icons .instagram:hover {
+  color: #e4405f; /* Color de Instagram */
+}
+
+.social-icons .youtube:hover {
+  color: #ff0000; /* Color de YouTube */
+}
+
+.social-icons .playstore:hover {
+  color: #34a853; /* Color de Google Play Store */
+}
+
+.btn-primary {
+  margin-left: 10px;
+}
