@@ -1,0 +1,38 @@
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  transition: color 0.3s;
+  font-size: 24px;
+  color: gray;
+}
+
+.social-icons .facebook:hover {
+  color: #3b5998;
+}
+
+.social-icons .instagram:hover {
+  color: #e4405f;
+}
+
+.social-icons .youtube:hover {
+  color: #ff0000;
+}
+
+.social-icons .playstore:hover {
+  color: #34a853;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn {
+  background-color: rgba(0, 43, 73, 1);
+  transition: background-color 0.3s ease;
+
+}
+

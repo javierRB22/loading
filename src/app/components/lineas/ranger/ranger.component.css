@@ -1,30 +1,49 @@
 .social-icons {
   display: flex;
   align-items: center;
+
 }
 
 .social-icons a {
   margin-right: 10px;
   transition: color 0.3s;
-  font-size: 24px; /* Aumenta el tamaño de los iconos */
+  font-size: 24px;
+  color: gray;
 }
 
 .social-icons .facebook:hover {
-  color: #3b5998; /* Color de Facebook */
+  color: #3b5998;
 }
 
 .social-icons .instagram:hover {
-  color: #e4405f; /* Color de Instagram */
+  color: #e4405f;
 }
 
 .social-icons .youtube:hover {
-  color: #ff0000; /* Color de YouTube */
+  color: #ff0000;
 }
 
 .social-icons .playstore:hover {
-  color: #34a853; /* Color de Google Play Store */
+  color: #34a853;
 }
 
-.btn-primary {
-  margin-left: 10px;
+.btn-warning:hover {
+  color: #212529;
+  background-color: #e0a800;
+  border-color: #d39e00;
+}
+
+.btn {
+  background-color: #FFD800;
+  transition: background-color 0.3s ease;
+
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: rgb(22, 44, 69);
+  margin-bottom: 30px;
+
 }
