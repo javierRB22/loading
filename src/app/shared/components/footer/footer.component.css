@@ -9,20 +9,8 @@
   height: 170px;
 }
 
-.col {
-  text-align: center;
-  position: relative;
-}
-
 .border-right {
   border-right: 2px solid #e7e7e7;
-}
-
-.col ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-
 }
 
 li {
