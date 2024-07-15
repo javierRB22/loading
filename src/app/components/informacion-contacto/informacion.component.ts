@@ -76,7 +76,7 @@ export class InformacionComponent implements OnInit {
       icon: type,
       title: message,
       showConfirmButton: false,
-      timer: 3000 // Duración de la alerta en milisegundos
+      timer: 2000
     });
   }
 }
