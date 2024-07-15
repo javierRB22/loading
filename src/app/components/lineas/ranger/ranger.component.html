@@ -1,39 +1,32 @@
-
-
 <div class="animate__animated animate__fadeIn">
-  <h1 class="text-center" id="lineas">NUESTRAS LINEAS DE NEGOCIO</h1><br><br><br>
+  <h1 class="text-center" id="lineas">NUESTRAS LÍNEAS DE NEGOCIO</h1><br><br><br>
   <div class="container">
-    <div class="row g-5 justify-content-between">
+    <div class="row g-5 justify-content-between" *ngFor="let linea of lineas">
       <div class="col-md-5">
-        <h2>FERRETERÍA</h2><br>
-        <h4>Línea líder en importación y distribución de Ferretería:</h4>
-        <p>Actualmente cuenta con un amplio portafolio de herramientas mecánicas, manuales y eléctricas
-          distinguidas con el nombre RANGER y MP TOOLS. También incluye elementos de protección industrial en su
-          portafolio, distinguidos con la marca MAVERICK SAFETY. Cubre todo el territorio colombiano, brindando
-          exclusividad y facilidades de entregas.</p>
+        <h2>{{ linea.titulo }}</h2><br>
+        <h4>{{ linea.subtitulo }}</h4>
+        <p>{{ linea.descripcion }}</p>
         <div class="social-icons d-flex justify-content-start align-items-center">
-          <a href="https://www.facebook.com/rangerqualitytools/?locale=es_LA" target="_blank" class="facebook mx-2">
+          <a [href]="linea.enlaces.facebook" target="_blank" class="facebook mx-2">
             <i class="bi bi-facebook"></i>
           </a>
-          <a href="https://www.instagram.com/rangertools/?hl=es-la" target="_blank" class="instagram mx-2">
+          <a [href]="linea.enlaces.instagram" target="_blank" class="instagram mx-2">
             <i class="bi bi-instagram"></i>
           </a>
-          <a href="https://www.youtube.com/@rangertools6342/featured" target="_blank" class="youtube mx-2">
+          <a [href]="linea.enlaces.youtube" target="_blank" class="youtube mx-2">
             <i class="bi bi-youtube"></i>
           </a>
-          <a href="https://play.google.com/store/apps/details?id=com.marpicosa.rangerstore" target="_blank" class="playstore mx-2">
+          <a [href]="linea.enlaces.playstore" target="_blank" class="playstore mx-2">
             <i class="bi bi-google-play"></i>
           </a>
         </div>
         <div class="d-grid gap-2 my-2">
-          <a href="https://ranger.com.co/#/login" target="_blank" class="btn btn-warning" role="button">Nuestra
-            página</a>
+          <a [href]="linea.enlaces.pagina" target="_blank" class="btn btn-warning" role="button">Nuestra página</a>
         </div>
       </div>
       <div class="col-md-5">
-        <img src="assets/img/lineas/img1.svg" class="img-fluid" alt="Imagen de ejemplo">
+        <img [src]="linea.imgSrc" class="img-fluid" alt="Imagen de ejemplo">
       </div>
     </div>
   </div>
 </div>
-
