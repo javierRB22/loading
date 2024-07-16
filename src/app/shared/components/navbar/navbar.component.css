@@ -1,7 +1,7 @@
 
- .navbar {
-  background-color: rgba(0, 43, 73, 1);
- }
+  .navbar {
+    background-color: rgba(0, 43, 73, 1);
+  }
 
   .navbar-toggler {
     border-color: white;
@@ -11,12 +11,22 @@
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   }
 
-
   .custom-offcanvas {
     background-color: rgba(61, 89, 171, 0.3);
     backdrop-filter: blur(10px);
   }
 
-a{
-  font-family: 'Roboto', sans-serif;
-}
+  .custom-offcanvas .nav-link, .navbar-nav .nav-link {
+    transition: background-color 0.3s ease;
+  }
+
+  .custom-offcanvas .nav-link:hover, .navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Línea para agregar el borde */
+    border-radius: 10px; /* Línea para hacer el borde redondeado */
+  }
+
+  a {
+    font-family: 'Roboto', sans-serif;
+  }
+
