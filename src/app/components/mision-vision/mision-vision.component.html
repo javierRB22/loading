@@ -1,11 +1,11 @@
 <div class="my-3 animate__animated animate__fadeIn">
   <br>
   <div id="mision-vision">
-    <div class="image-container">
-      <figure class="image" *ngFor="let item of misionVisionData">
+    <div class="image-container" *ngFor="let item of misionVisionData">
+      <h1 class="image-title text-center">{{ item.titulo }}</h1>
+      <figure class="image">
         <img [src]="item.imgSrc">
         <div class="capa">
-          <h3>{{ item.titulo }}</h3>
           <p>{{ item.descripcion }}</p>
         </div>
       </figure>

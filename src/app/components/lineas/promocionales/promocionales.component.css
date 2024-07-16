@@ -35,4 +35,22 @@
   transition: background-color 0.3s ease;
 
 }
+h2 {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(22, 44, 69);
+  margin-bottom: 30px;
+  cursor: default;
+
+}
+
+h4 {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(22, 44, 69);
+  margin-bottom: 30px;
+  cursor: default;
+
+}
+p{
+  font-family: 'Roboto', sans-serif;
+}
 

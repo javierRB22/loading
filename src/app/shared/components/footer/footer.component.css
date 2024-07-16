@@ -19,6 +19,7 @@ li {
   cursor: default;
   background-color: #002b49;
   border: none;
+  font-family: 'Roboto', sans-serif;
 }
 
 p {
@@ -28,6 +29,7 @@ p {
 h5 {
   color: white;
   cursor: default;
+  font-family: 'Roboto', sans-serif;
 }
 
 @media screen and (max-width: 576px) {
@@ -47,4 +49,8 @@ h5 {
 .bi-envelope:hover {
   transform: translateY(-5px);
   fill: #007bff;
+}
+
+a{
+  font-family: 'Roboto', sans-serif;
 }
