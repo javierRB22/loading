@@ -3,11 +3,6 @@
   background-color: rgba(0, 43, 73, 1);
  }
 
- .offcanvas{
-  background-color: rgba(0, 43, 73, 1);
- }
-
-
   .navbar-toggler {
     border-color: white;
   }
@@ -17,5 +12,8 @@
   }
 
 
-
+  .custom-offcanvas {
+    background-color: rgba(61, 89, 171, 0.3);
+    backdrop-filter: blur(10px);
+  }
 

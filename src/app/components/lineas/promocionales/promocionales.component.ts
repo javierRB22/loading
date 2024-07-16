@@ -25,7 +25,7 @@ export class PromocionalesComponent {
       titulo: 'PROMOCIONALES',
       subtitulo: 'Línea líder en importación y distribución Promocionales:',
       descripcion: 'Actualmente cuenta con un amplio portafolio de productos para dar respuesta a una necesidad de las empresas colombianas, la promoción y la recordación de sus servicios, productos y marcas a través de artículos promocionales novedosos.',
-      imgSrc: 'assets/img/lineas/img2.svg',
+      imgSrc: 'assets/img/lineas/promocionales.png',
       enlaces: {
         facebook: 'https://www.facebook.com/mppromocionales',
         instagram: 'https://www.instagram.com/marpico.promocionales/?hl=es',
