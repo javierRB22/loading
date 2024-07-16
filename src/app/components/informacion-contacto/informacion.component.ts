@@ -76,7 +76,7 @@ export class InformacionComponent implements OnInit {
       icon: type,
       title: message,
       showConfirmButton: false,
-      timer: 2000
+      timer: 1500
     });
   }
 }
