@@ -32,6 +32,10 @@ h5 {
   font-family: 'Roboto', sans-serif;
 }
 
+h3{
+  font-family: 'Roboto', sans-serif;
+}
+
 @media screen and (max-width: 576px) {
   .col {
     display: block;

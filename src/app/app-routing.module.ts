@@ -4,17 +4,16 @@ import { HomeComponent } from './pages/home/home.component';
 import { NuestrosValoresComponent } from './pages/nuestros-valores/nuestros-valores.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 
-
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'nuestros-valores', component: NuestrosValoresComponent},
-  {path: 'contacto', component: ContactoComponent},
-  {path: '**', component: HomeComponent}
-
+  { path: '', component: HomeComponent },
+  { path: 'nuestros-valores', component: NuestrosValoresComponent },
+  { path: 'contacto', component: ContactoComponent },
+  { path: '**', component: HomeComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  // imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { enableViewTransitions: true })],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

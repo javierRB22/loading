@@ -1,8 +1,8 @@
 <div class="animate__animated animate__fadeIn my-5">
   <div class="container">
-    <div class="row g-5 justify-content-between" *ngFor="let linea of lineas">
+    <div class="row g-5 justify-content-between align-items-center" *ngFor="let linea of lineas">
       <div class="col-md-5">
-        <h2>{{ linea.titulo }}</h2>
+        <h2><strong>{{ linea.titulo }}</strong></h2>
         <h4>{{ linea.subtitulo }}</h4>
         <p>{{ linea.descripcion }}</p>
         <div class="social-icons d-flex justify-content-start align-items-center">
@@ -18,7 +18,7 @@
         </div>
       </div>
       <div class="col-md-5">
-        <img [src]="linea.imgSrc" class="w-100 h-100 rounded shadow">
+        <img [src]="linea.imgSrc" class="img-fluid rounded shadow">
       </div>
     </div>
   </div>

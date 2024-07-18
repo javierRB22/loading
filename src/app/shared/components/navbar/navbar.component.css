@@ -1,6 +1,6 @@
 
   .navbar {
-    background-color: rgba(0, 43, 73, 1);
+    background-color: rgb(0, 43, 73);
   }
 
   .navbar-toggler {
@@ -12,7 +12,7 @@
   }
 
   .custom-offcanvas {
-    background-color: rgba(61, 89, 171, 0.3);
+    background-color: rgb(0, 43, 73, 0.4);
     backdrop-filter: blur(10px);
   }
 
@@ -23,8 +23,8 @@
 
   .custom-offcanvas .nav-link:hover, .navbar-nav .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Línea para agregar el borde */
-    border-radius: 10px; /* Línea para hacer el borde redondeado */
+    outline: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
   }
 
   a {
