@@ -5,13 +5,15 @@ import { NuestrosValoresComponent } from './pages/nuestros-valores/nuestros-valo
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.component';
 import { DiccionarioDatosComponent } from './components/diccionario-datos/diccionario-datos.component';
+import { SobreNosotrosComponent } from './pages/sobre-nosotros/sobre-nosotros.component';
+import { DatosMarpicoComponent } from './pages/datos-marpico/datos-marpico.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'nuestros-valores', component: NuestrosValoresComponent },
-  { path: 'quienes-somos', component: QuienesSomosComponent   },
+  { path: 'sobre-nosotros', component: SobreNosotrosComponent   },
   { path: 'contacto', component: ContactoComponent },
-  { path: 'datos', component: DiccionarioDatosComponent },
+  { path: 'datos-marpico', component: DatosMarpicoComponent },
   { path: '**', component: HomeComponent },
 ];
 

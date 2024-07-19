@@ -26,6 +26,8 @@ import { LicoresComponent } from './components/lineas/licores/licores.component'
 import { NuestraHistoriaComponent } from './components/nuestra-historia/nuestra-historia.component';
 import { DiccionarioDatosComponent } from './components/diccionario-datos/diccionario-datos.component';
 import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.component';
+import { SobreNosotrosComponent } from './pages/sobre-nosotros/sobre-nosotros.component';
+import { DatosMarpicoComponent } from './pages/datos-marpico/datos-marpico.component';
 
 
 @NgModule({
@@ -46,7 +48,9 @@ import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.
       LicoresComponent,
       NuestraHistoriaComponent,
       DiccionarioDatosComponent,
-      QuienesSomosComponent
+      QuienesSomosComponent,
+      SobreNosotrosComponent,
+      DatosMarpicoComponent
 
 
   ],
