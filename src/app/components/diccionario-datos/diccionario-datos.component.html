@@ -1,3 +1,22 @@
 <section class="min-vh-100">
-  <h1>DICCIONARIO DE DATOS</h1>
+  <div class="custom-image-container">
+    <img src="../../../../assets/img/contacto/datos.jpg" class="img-fluid custom-image">
+    <div class="text">DICCIONARIO DE DATOS</div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center my-5" *ngFor="let row of rows">
+      <div class="col-md-4 text-center" *ngFor="let col of row.columns">
+        <i class="bi bi-telephone-fill me-2"></i>
+        <i class="bi bi-envelope-at-fill me-2"></i>
+        <ul class="list-group-item">
+          <li class="list-group-item">Dependencias-Marpico</li>
+          <li class="list-group-item">Contacto</li>
+          <li class="list-group-item">ejemploCorreo.com</li>
+          <button class="btn btn-primary w-50">
+            <i class="bi bi-whatsapp me-2"></i> CONVERSAR
+          </button>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>

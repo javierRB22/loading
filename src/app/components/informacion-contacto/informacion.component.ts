@@ -19,8 +19,8 @@ export class InformacionComponent implements OnInit {
       telefono: [null, [Validators.required, Validators.min(1)]],
       cedula: [null, [Validators.required, Validators.min(1)]],
       lugar: ['', [Validators.required, Validators.minLength(6)]],
-      comentario: ['', [Validators.required, Validators.minLength(6)]],
-      linea: ['', [Validators.required]]
+      linea: ['', [Validators.required]],
+      comentario: ['', [Validators.required, Validators.minLength(6)]]
     });
   }
 
