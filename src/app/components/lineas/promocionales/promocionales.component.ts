@@ -28,12 +28,12 @@ export class PromocionalesComponent {
       descripcion: 'Actualmente cuenta con un amplio portafolio de productos para dar respuesta a una necesidad de las empresas colombianas, la promoción y la recordación de sus servicios, productos y marcas a través de artículos promocionales novedosos.',
       imgSrc: 'assets/img/lineas/promocionales.png',
       enlaces: {
-        facebook: 'https://www.facebook.com/mppromocionales',
+        facebook:  'https://www.facebook.com/mppromocionales',
         instagram: 'https://www.instagram.com/marpico.promocionales/?hl=es',
-        youtube: 'https://www.youtube.com/channel/UC6k48QE-VbtcR77CGYxgzow',
+        youtube:   'https://www.youtube.com/channel/UC6k48QE-VbtcR77CGYxgzow',
         playstore: 'https://play.google.com/store/apps/details?id=com.marpicosa.promoapp&hl=es_CO&gl=US',
-        appstore: 'https://play.google.com/store/apps/details?id=com.marpicosa.promoapp&hl=es_CO&gl=US',
-        pagina: 'https://marpicopromocionales.com/#/'
+        appstore:  'https://apps.apple.com/co/app/marpico-promocionales/id1671813907',
+        pagina:    'https://marpicopromocionales.com/#/'
       }
     }
   ];
