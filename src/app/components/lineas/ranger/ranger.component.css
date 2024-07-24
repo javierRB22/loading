@@ -27,6 +27,11 @@
   color: #34a853;
 }
 
+.social-icons .appstore:hover {
+  color: rgb(31, 118, 231);
+}
+
+
 .btn-warning:hover {
   color: #212529;
   background-color: #e0a800;

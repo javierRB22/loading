@@ -10,6 +10,7 @@ interface LineaNegocio {
     instagram: string;
     youtube: string;
     playstore: string;
+    appstore: string;
     pagina: string;
   };
 }
@@ -31,6 +32,7 @@ export class RangerComponent {
         instagram: 'https://www.instagram.com/rangertools/?hl=es-la',
         youtube: 'https://www.youtube.com/@rangertools6342/featured',
         playstore: 'https://play.google.com/store/apps/details?id=com.marpicosa.rangerstore',
+        appstore: "https://play.google.com/store/apps/details?id=com.marpicosa.rangerstore",
         pagina: 'https://ranger.com.co/#/login'
       }
     }

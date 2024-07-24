@@ -10,6 +10,7 @@ interface LineaNegocio {
     instagram: string;
     youtube: string;
     playstore: string;
+    appstore: string;
     pagina: string;
   };
 }
@@ -31,6 +32,7 @@ export class PromocionalesComponent {
         instagram: 'https://www.instagram.com/marpico.promocionales/?hl=es',
         youtube: 'https://www.youtube.com/channel/UC6k48QE-VbtcR77CGYxgzow',
         playstore: 'https://play.google.com/store/apps/details?id=com.marpicosa.promoapp&hl=es_CO&gl=US',
+        appstore: 'https://play.google.com/store/apps/details?id=com.marpicosa.promoapp&hl=es_CO&gl=US',
         pagina: 'https://marpicopromocionales.com/#/'
       }
     }
