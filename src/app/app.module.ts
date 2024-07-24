@@ -6,6 +6,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from './shared/shared.module';
+import { FloatLabelModule } from 'primeng/floatlabel';
+
 
 
 import { AppComponent } from './app.component';
@@ -28,6 +30,8 @@ import { DiccionarioDatosComponent } from './components/diccionario-datos/diccio
 import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.component';
 import { SobreNosotrosComponent } from './pages/sobre-nosotros/sobre-nosotros.component';
 import { DatosMarpicoComponent } from './pages/datos-marpico/datos-marpico.component';
+
+
 
 
 @NgModule({
@@ -53,6 +57,7 @@ import { DatosMarpicoComponent } from './pages/datos-marpico/datos-marpico.compo
       DatosMarpicoComponent
 
 
+
   ],
   imports: [
     BrowserModule,
@@ -62,6 +67,9 @@ import { DatosMarpicoComponent } from './pages/datos-marpico/datos-marpico.compo
     SharedModule,
     ReactiveFormsModule,
     HttpClientModule,
+    FloatLabelModule
+
+
 
 
   ],
