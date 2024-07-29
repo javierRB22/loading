@@ -1,85 +1,83 @@
 <div class="animate__animated animate__fadeIn">
-  <div class="custom-image-container">
+  <!-- <div class="custom-image-container">
     <img src="../../../../assets/img/contacto/contacto.jpg" class="img-fluid custom-image">
     <div class="text">CONTACTO</div>
-  </div>
+  </div> -->
   <div class="container my-5">
-    <h1 class="mt-4 mb-4 text-center"> <strong>CONTACTO PRINCIPAL</strong></h1>
-    <div class="row justify-content-center">
-      <div class="card" style="width: 18rem;">
-        <a href="https://www.google.com/maps/place/Marpico+S.A/@4.6807294,-74.0434881,17z/data=
-        !3m1!4b1!4m6!3m5!1s0x8e3f9a99f62afa25:0xaacfe024f5f8a71b!8m2!3d4.6807241!4d-74.0409132!16s%2Fg%2F11r9csgcw?entry=ttu"
-          target="_blank">
-          <img src="assets/img/contacto/direccion.svg" class="card-img-top rounded">
-        </a>
-        <div class="card-body text-center">
-          <ul class="list-group list-group-flush text-center">
-            <li class="list-group-item">BOGOTÁ D.C</li>
-            <li class="list-group-item">WORLD TRADE CENTER</li>
-            <li class="list-group-item">Calle 100 N. 8A - 49 Torre B Oficina 702</li>
-            <li class="list-group-item">(57) 601 6235566</li>
-          </ul>
+    <h1 class="mt-4 mb-4 text-center"><strong>CONTACTO PRINCIPAL</strong></h1>
+    <div class="row">
+      <div class="col-md-6 d-flex align-items-center justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <a href="https://www.google.com/maps/place/Marpico+S.A/@4.6807294,-74.0434881,17z/data=
+          !3m1!4b1!4m6!3m5!1s0x8e3f9a99f62afa25:0xaacfe024f5f8a71b!8m2!3d4.6807241!4d-74.0409132!16s%2Fg%2F11r9csgcw?entry=ttu"
+            target="_blank">
+            <img src="assets/img/contacto/direccion.svg" class="card-img-top rounded">
+          </a>
+          <div class="card-body text-center">
+            <ul class="list-group list-group-flush text-center">
+              <li class="list-group-item">BOGOTÁ D.C</li>
+              <li class="list-group-item">WORLD TRADE CENTER</li>
+              <li class="list-group-item">Calle 100 N. 8A - 49 Torre B Oficina 702</li>
+              <li class="list-group-item">(57) 601 6235566</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-    <hr>
-    <h1 class="mt-4 mb-4 text-center"><strong>FORMULARIO DE CONTACTO</strong></h1>
-    <div class="container">
-      <form [formGroup]="myForm" (ngSubmit)="onSave()" autocomplete="off">
-        <div class="form-floating mb-3 shadow-sm ">
-          <input type="text" class="form-control" formControlName="name" id="floatingName" placeholder="nombres">
-          <label for="floatingName">Nombres y apellidos completos</label>
-          <span *ngIf="isValidField('name')" class="form-text text-danger"> {{getFieldError('name')}}</span>
-        </div>
-        <div class="form-floating mb-3 shadow-sm">
-          <input type="email" class="form-control" formControlName="email" id="floatingEmail" placeholder="email">
-          <label for="floatingEmail">Correo electrónico</label>
-          <span *ngIf="isValidField('email')" class="form-text text-danger"> {{getFieldError('email')}}</span>
-        </div>
-        <div class="form-floating mb-3 shadow-sm">
-          <input type="number" class="form-control" formControlName="telefono" id="floatingPhone" placeholder="number">
-          <label for="floatingPhone">Número de teléfono</label>
-          <span *ngIf="isValidField('telefono')" class="form-text text-danger">Minimo un caracter</span>
-        </div>
-        <div class="form-floating mb-3 shadow-sm">
-          <input type="number" class="form-control" formControlName="cedula" id="floatingID" placeholder="number">
-          <label for="floatingID">Número de cédula</label>
-          <span *ngIf="isValidField('cedula')" class="form-text text-danger">Minimo 1 caracter</span>
-        </div>
-        <div class="form-floating mb-3 shadow-sm">
-          <input type="text" class="form-control" formControlName="lugar" id="floatingLocation" placeholder="text">
-          <label for="floatingLocation">Desde donde nos contacta</label>
-          <span *ngIf="isValidField('lugar')" class="form-text text-danger"> {{getFieldError('lugar')}}</span>
-        </div>
-        <div class="form-floating mb-3">
-          <select class="form-select" id="floatingSelect" aria-label="Floating label select example"
-            formControlName="linea">
-            <option value="">Elige una opción</option>
-            <option value="renger">Ranger</option>
-            <option value="promocionales">Promocionales</option>
-            <option value="vinos-licores">Vinos y Licores</option>
-          </select>
-          <label for="floatingSelect">Línea de negocio a la que deseas contactar</label>
-          <span *ngIf="isValidField('linea')" class="form-text text-danger"> {{getFieldError('linea')}}</span>
-        </div>
-        <div class="form-floating mb-3 shadow-sm">
-          <textarea class="form-control" formControlName="comentario" placeholder="Leave a comment here"
-            id="floatingTextarea2" style="height: 100px"></textarea>
-          <label for="floatingTextarea2">Comentarios</label>
-          <span *ngIf="isValidField('comentario')" class="form-text text-danger"> {{getFieldError('comentario')}}</span>
-        </div>
-        <div class="mb-3 form-check">
-        </div>
-        <div class="d-flex justify-content-center d-grid gap-2 col-6 mx-auto">
-          <button type="submit" class="btn btn-primary  w-50" [disabled]="sendingForm">
-            <span *ngIf="!sendingForm">ENVÍAR</span>
-            <span *ngIf="sendingForm">
-              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-              Enviando...
-            </span>
-          </button>
-        </div>
-      </form>
+      <div class="col-md-6">
+        <h3 class="mt-4 mb-4 text-center"><strong>FORMULARIO DE CONTACTO</strong></h3>
+        <form [formGroup]="myForm" (ngSubmit)="onSave()" autocomplete="off">
+          <div class="form-floating mb-3 shadow-sm">
+            <input type="text" class="form-control" formControlName="name" id="floatingName" placeholder="nombres">
+            <label for="floatingName">Nombres y apellidos completos</label>
+            <span *ngIf="isValidField('name')" class="form-text text-danger">{{getFieldError('name')}}</span>
+          </div>
+          <div class="form-floating mb-3 shadow-sm">
+            <input type="email" class="form-control" formControlName="email" id="floatingEmail" placeholder="email">
+            <label for="floatingEmail">Correo electrónico</label>
+            <span *ngIf="isValidField('email')" class="form-text text-danger">{{getFieldError('email')}}</span>
+          </div>
+          <div class="form-floating mb-3 shadow-sm">
+            <input type="number" class="form-control" formControlName="telefono" id="floatingPhone" placeholder="number">
+            <label for="floatingPhone">Número de teléfono</label>
+            <span *ngIf="isValidField('telefono')" class="form-text text-danger">Minimo un caracter</span>
+          </div>
+          <div class="form-floating mb-3 shadow-sm">
+            <input type="number" class="form-control" formControlName="cedula" id="floatingID" placeholder="number">
+            <label for="floatingID">Número de cédula</label>
+            <span *ngIf="isValidField('cedula')" class="form-text text-danger">Minimo 1 caracter</span>
+          </div>
+          <div class="form-floating mb-3 shadow-sm">
+            <input type="text" class="form-control" formControlName="lugar" id="floatingLocation" placeholder="text">
+            <label for="floatingLocation">Desde donde nos contacta</label>
+            <span *ngIf="isValidField('lugar')" class="form-text text-danger">{{getFieldError('lugar')}}</span>
+          </div>
+          <div class="form-floating mb-3">
+            <select class="form-select" id="floatingSelect" aria-label="Floating label select example" formControlName="linea">
+              <option value="">Elige una opción</option>
+              <option value="renger">Ranger</option>
+              <option value="promocionales">Promocionales</option>
+              <option value="vinos-licores">Vinos y Licores</option>
+            </select>
+            <label for="floatingSelect">Línea de negocio a la que deseas contactar</label>
+            <span *ngIf="isValidField('linea')" class="form-text text-danger">{{getFieldError('linea')}}</span>
+          </div>
+          <div class="form-floating mb-3 shadow-sm">
+            <textarea class="form-control" formControlName="comentario" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Comentarios</label>
+            <span *ngIf="isValidField('comentario')" class="form-text text-danger">{{getFieldError('comentario')}}</span>
+          </div>
+          <div class="mb-3 form-check"></div>
+          <div class="d-flex justify-content-center d-grid gap-2 col-6 mx-auto">
+            <button type="submit" class="btn btn-primary w-50" [disabled]="sendingForm">
+              <span *ngIf="!sendingForm">ENVÍAR</span>
+              <span *ngIf="sendingForm">
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Enviando...
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 </div>
