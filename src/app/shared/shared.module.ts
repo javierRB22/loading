@@ -5,10 +5,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { DropdownModule } from 'primeng/dropdown';
 
-
-
-
-
 @NgModule({
   declarations: [
     NavbarComponent,
@@ -17,12 +13,6 @@ import { DropdownModule } from 'primeng/dropdown';
   imports: [
     CommonModule,
     RouterModule,
-
-
-
-
-
-
   ],
 
   exports: [

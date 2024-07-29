@@ -1,13 +1,24 @@
-import { Component } from '@angular/core';
-import { FormGroup } from '@angular/forms';
-import { TreeNode } from 'primeng/api';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+  styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit {
+  navbarSolid: boolean = false;
 
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const navbarHeight = 80;
+    if (window.pageYOffset > navbarHeight) {
+      this.navbarSolid = true;
+    } else {
+      this.navbarSolid = false;
+    }
+  }
 
+  ngOnInit(): void {
+    this.onWindowScroll();
+  }
 }

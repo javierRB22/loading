@@ -55,7 +55,7 @@ export class InformacionComponent implements OnInit {
       return;
     }
 
-    this.sendingForm = true;
+    this.sendingForm = false;
 
     this.emailService.enviarCorreo(this.myForm.value).subscribe(
       (response: any) => {

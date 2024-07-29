@@ -41,3 +41,14 @@
     border-radius: 10px;
   }
 
+  .navbar {
+    transition: background-color 0.3s;
+  }
+
+  .navbar-transparent {
+    background-color: transparent;
+  }
+
+  .navbar-solid {
+    background-color: rgba(0, 0, 0, 0.7); /* Cambia este color según tus necesidades */
+  }
