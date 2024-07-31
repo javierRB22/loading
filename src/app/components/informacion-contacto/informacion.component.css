@@ -1,21 +1,20 @@
-
 h1 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: rgb(22, 44, 69);
   margin-bottom: 30px;
   cursor: default;
-
-}
-li{
-  font-family: 'Roboto', sans-serif;
 }
 
-span{
-  font-family: 'Roboto', sans-serif;
+li {
+  font-family: "Roboto", sans-serif;
 }
 
-label{
-  font-family: 'Roboto', sans-serif;
+span {
+  font-family: "Roboto", sans-serif;
+}
+
+label {
+  font-family: "Roboto", sans-serif;
 }
 
 .card {
@@ -45,9 +44,8 @@ label{
   font-size: 4vw;
   color: white;
   text-shadow: 2px 2px 4px #000000;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-
 
 @media screen and (max-width: 768px) {
   .text {
@@ -79,7 +77,6 @@ label{
   max-height: 600px;
 }
 
-
 .btn-primary {
   width: 100%;
   padding: 10px;
@@ -102,4 +99,3 @@ label{
   height: auto;
   max-height: 250px;
 }
-

@@ -39,8 +39,10 @@ export class InformacionComponent implements OnInit {
     if (errors) {
       if (errors['required']) {
         return 'Este campo es requerido';
+
       } else if (errors['minlength']) {
         return `Mínimo ${errors['minlength'].requiredLength} caracteres.`;
+
       } else if (errors['email']) {
         return 'Debe ser un correo electrónico válido';
       }
