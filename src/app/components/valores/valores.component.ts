@@ -20,15 +20,15 @@ export class ValoresComponent {
         'Con el aporte de cada integrante, buscar el logro de los objetivos organizacionales, motivando y fomentando la pasión de todos los miembros del equipo hacia la excelencia. Así mismo impulsar un ambiente que promueva el enriquecimiento mutuo y el respeto por las ideas y opiniones.',
     },
     {
-      // imgSrc: 'assets/img/valores/innovacion.svg',
-      imgSrc: 'assets/img/valores/grafica.gif',
+      imgSrc: 'assets/img/valores/innovacion.svg',
+      // imgSrc: 'assets/img/valores/grafica.gif',
       title: 'Innovación y competitividad',
       description:
         'Buscar y proponer nuevas maneras de hacer las cosas, y la adquisición de nuevos productos y servicios para satisfacer las necesidades de nuestros clientes.',
     },
     {
-      imgSrc: 'assets/img/valores/LottieLego.gif',
-      // imgSrc: 'assets/img/valores/enfoque.svg',
+      // imgSrc: 'assets/img/valores/LottieLego.gif',
+      imgSrc: 'assets/img/valores/enfoque.svg',
       title: 'Enfoque de Servicio',
       description:
         'Buscar dar respuesta a las necesidades de los clientes de forma oportuna, amable y efectiva.',
