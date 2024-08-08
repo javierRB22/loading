@@ -66,3 +66,12 @@
   transition: background-color 0.3s ease;
 }
 
+.card {
+  cursor: default;
+  transition: all 400ms ease;
+}
+
+.card:hover {
+  box-shadow: 20px 5px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3%);
+}
