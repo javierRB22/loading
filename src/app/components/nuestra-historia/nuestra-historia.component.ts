@@ -1,10 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-nuestra-historia',
   templateUrl: './nuestra-historia.component.html',
   styleUrl: './nuestra-historia.component.css'
 })
-export class NuestraHistoriaComponent {
+export class NuestraHistoriaComponent implements OnInit {
+
+
+  ngOnInit(): void {
+
+  }
 
 }

@@ -31,6 +31,8 @@ import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.
 import { SobreNosotrosComponent } from './pages/sobre-nosotros/sobre-nosotros.component';
 import { DatosMarpicoComponent } from './pages/datos-marpico/datos-marpico.component';
 import { HomeAltComponent } from './components/home-alt/home-alt.component';
+import { TrabajaConNosotrosComponent } from './pages/trabaja-con-nosotros/trabaja-con-nosotros.component';
+import { FormularioTrabajoComponent } from './components/formulario-trabajo/formulario-trabajo.component';
 
 
 
@@ -57,6 +59,8 @@ import { HomeAltComponent } from './components/home-alt/home-alt.component';
       SobreNosotrosComponent,
       DatosMarpicoComponent,
       HomeAltComponent,
+      TrabajaConNosotrosComponent,
+      FormularioTrabajoComponent,
 
 
 
