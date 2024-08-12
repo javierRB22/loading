@@ -8,72 +8,63 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from './shared/shared.module';
 
 
-
-
 import { AppComponent } from './app.component';
 import { CardsComponent } from './components/cards/cards.component';
-
-
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
+import { DatosMarpicoComponent } from './pages/datos-marpico/datos-marpico.component';
+import { DiccionarioDatosComponent } from './components/diccionario-datos/diccionario-datos.component';
+import { FormularioTrabajoComponent } from './components/formulario-trabajo/formulario-trabajo.component';
 import { HomeComponent } from './pages/home/home.component';
 import { InformacionComponent } from './components/informacion-contacto/informacion.component';
-import { MisionVisionComponent } from './components/mision-vision/mision-vision.component';
-import { NuestrosValoresComponent } from './pages/nuestros-valores/nuestros-valores.component';
-import { ValoresComponent } from './components/valores/valores.component';
-
-import { RangerComponent } from './components/lineas/ranger/ranger.component';
-import { PromocionalesComponent } from './components/lineas/promocionales/promocionales.component';
 import { LicoresComponent } from './components/lineas/licores/licores.component';
+import { MisionVisionComponent } from './components/mision-vision/mision-vision.component';
 import { NuestraHistoriaComponent } from './components/nuestra-historia/nuestra-historia.component';
-import { DiccionarioDatosComponent } from './components/diccionario-datos/diccionario-datos.component';
+import { NuestrosValoresComponent } from './pages/nuestros-valores/nuestros-valores.component';
+import { PromocionalesComponent } from './components/lineas/promocionales/promocionales.component';
 import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.component';
+import { RangerComponent } from './components/lineas/ranger/ranger.component';
 import { SobreNosotrosComponent } from './pages/sobre-nosotros/sobre-nosotros.component';
-import { DatosMarpicoComponent } from './pages/datos-marpico/datos-marpico.component';
-import { HomeAltComponent } from './components/home-alt/home-alt.component';
 import { TrabajaConNosotrosComponent } from './pages/trabaja-con-nosotros/trabaja-con-nosotros.component';
-import { FormularioTrabajoComponent } from './components/formulario-trabajo/formulario-trabajo.component';
+import { ValoresComponent } from './components/valores/valores.component';
 
 
 
 
 @NgModule({
   declarations: [
+      CarouselComponent,
+      ContactoComponent,
+      DatosMarpicoComponent,
+      DiccionarioDatosComponent,
+      FormularioTrabajoComponent,
+      InformacionComponent,
+      LicoresComponent,
+      MisionVisionComponent,
+      NuestraHistoriaComponent,
+      NuestrosValoresComponent,
+      PromocionalesComponent,
+      QuienesSomosComponent,
+      RangerComponent,
+      SobreNosotrosComponent,
+      TrabajaConNosotrosComponent,
+      ValoresComponent,
     AppComponent,
     CardsComponent,
     HomeComponent,
-      ContactoComponent,
-      NuestrosValoresComponent,
-      CarouselComponent,
-      MisionVisionComponent,
-      InformacionComponent,
-      ValoresComponent,
-      PromocionalesComponent,
-      LicoresComponent,
-      RangerComponent,
-      PromocionalesComponent,
-      LicoresComponent,
-      NuestraHistoriaComponent,
-      DiccionarioDatosComponent,
-      QuienesSomosComponent,
-      SobreNosotrosComponent,
-      DatosMarpicoComponent,
-      HomeAltComponent,
-      TrabajaConNosotrosComponent,
-      FormularioTrabajoComponent,
 
 
 
 
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
-    RouterModule,
+    BrowserModule,
     CommonModule,
-    SharedModule,
-    ReactiveFormsModule,
     HttpClientModule,
+    ReactiveFormsModule,
+    RouterModule,
+    SharedModule,
 
 
 
