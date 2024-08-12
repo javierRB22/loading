@@ -100,3 +100,7 @@ h1 {
   margin-bottom: 30px;
   cursor: default;
 }
+
+p {
+  font-family: 'Roboto', sans-serif;
+}

@@ -51,13 +51,15 @@ export class InformacionComponent implements OnInit {
     return null;
   }
 
+
+
   onSave(): void {
     if (this.myForm.invalid) {
       this.showAlert('Por favor, llena todos los campos correctamente.', 'warning');
       return;
     }
 
-    this.sendingForm = false;
+    this.sendingForm = true;
 
     this.emailService.enviarCorreo(this.myForm.value).subscribe(
       (response: any) => {
@@ -73,6 +75,7 @@ export class InformacionComponent implements OnInit {
       }
     );
   }
+
 
   private showAlert(message: string, type: 'success' | 'error' | 'warning'): void {
     Swal.fire({
