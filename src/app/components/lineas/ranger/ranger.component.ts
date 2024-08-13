@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
+import AOS from 'aos';
+
+
 
 interface LineaNegocio {
   titulo: string;
@@ -39,4 +41,10 @@ export class RangerComponent {
       },
     },
   ];
+  ngOnInit() {
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+  }
 }

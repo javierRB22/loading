@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import AOS from 'aos';
 
 interface LineaNegocio {
   titulo: string;
@@ -37,4 +38,10 @@ export class PromocionalesComponent {
       }
     }
   ];
+  ngOnInit() {
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+  }
 }

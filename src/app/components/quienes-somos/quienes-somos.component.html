@@ -1,22 +1,92 @@
-<section class="min-vh-100">
-  <div class="custom-image-container">
-    <img src="assets/img/contacto/quienes-somos.jpg" class="img-fluid custom-image">
-    <div class="text">QUIÉNES SOMOS</div>
+<div class="container min-vh-100 my-5 ">
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+          aria-expanded="true" aria-controls="collapseOne">
+          <b>Historia</b>
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+
+          <app-nuestra-historia></app-nuestra-historia>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+          aria-expanded="false" aria-controls="collapseTwo">
+          <b>Nosotros</b>
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <h1 class="text-center"><strong>NOSOTROS</strong></h1>
+          <h5>Somos una empresa familiar colombiana, líder en la importacíon y comercialización de productos de
+            Ferretería, Promocionales y Vinos y Licores. Nuestro centro de operaciones está ubicado en Bogotá,D.C.
+            Gracias a nuestra sólida estructura comercial y logística, logramos llegar a gran parte del territorio
+            colombiano.Garantizamos que nuestros productos cumplan rigurosamente con todas las normativas vigentes
+            y las expectativas de nuestros clientes,contribuyendo asi al bienestar y desarrollo de las comunidades en
+            las que operamos. <br><br>
+            Estamos comprometidos con mantener los más altos estándares de calidad y responsabilidad social. <br><br>
+            Promovemos un ambiente laboral seguro y saludable,brindando oportunidades de desarrollo profesional a
+            nuestros empleados. <br><br>
+            Estamos comprometidos con prácticas sostenibles que minimicen el impacto ambiental y apoyen el desarrollo de
+            las comunidades donde operamos. <br><br>
+            Estamos firmemente comprometidos con la ética y la responsabilidad social. Trabajamos diligentemente para
+            prevenir el lavado de activos (LA), el financiamiento del terrorismo(FT), el financiamiento de la
+            profileración de armas de destrucción masiva(FPADM), así como la corrupción y el soborno, con el fin de
+            crear valor para nuestros clientes, colaboradores y accionistas, manteniendo los más altos estándares de
+            integridad
+            y transpariencia en todas nuestras operaciones. <br>
+            Valoramos la confianza de nuestros accionistas, trabajando continuamente para asegurar el crecimiento y la
+            estabilidad de la empresa. <br><br>
+            Uno de nuestros objetivos es contribuir al bienestar y progeso de la sociedad, reafirmando nuestro
+            compromiso con el país, nuestros colaboradores,sus familias y nuestros accionistas.
+          </h5>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <b>Misión</b>
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <h1 class="text-center"><strong>MISIÓN</strong></h1>
+          <h5>Proveer una amplia gama de productos que satisfagan las necesidades de nuestros clientes a través de la
+            importación, distribución y comercialización de productos de Ferretería, Promocionales y Vinos y Licores.
+            Apoyando su modelo de negocio, aumentando su rentabilidad económica y su impacto positivo en las
+            comunidades. </h5>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          <b>Visión</b>
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <h1 class="text-center"><strong>VISIÓN</strong></h1>
+          <h5>Alcanzar un mayor posicionamiento en el mercado latinoamericano mediante la comercialización de productos
+            de diversas industrias, a través de la innovación y la calidad de nuestros productos y servicios.
+            Introduciremos nuevas ofertas que respondan a las necesidades cambiantes del mercado, con el objetivo de
+            perdurar en el tiempo. Nuestra estrategia se basa en la experiencia, el conocimiento del sector y un equipo
+            humano altamente capacitado. Nos comprometemos a operar de manera sostenible, apoyando el bienestar de
+            nuestras comunidades y respetando el medio ambiente. Utilizaremos procesos eficientes y recursos físicos y
+            tecnológicos modernos para mantener nuestra relevancia y ofrecer un valor excepcional a nuestros clientes y
+            a la región. </h5>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="container my-5">
-    <h1 class="text-center"><strong>NOSOTROS</strong></h1>
-    <!-- <h3 class="my-5">¿Quienes somos?</h3> -->
-    <h5>Somos una empresa familiar colombiana, líder en la importacíon y comercialización de productos de Ferretería, Promocionales y Vinos y Licores. Nuestro centro de operaciones está ubicado en Bogotá,D.C.
-      Gracias a nuestra sólida estructura comercial y logística, logramos llegar a gran parte del territorio colombiano.Garantizamos que nuestros productos cumplan rigurosamente con todas las normativas vigentes
-      y las expectativas de nuestros clientes,contribuyendo asi al bienestar y desarrollo de las comunidades en las que operamos. <br><br>
-      Estamos comprometidos con mantener los más altos estándares de calidad y responsabilidad social. <br><br>
-      Promovemos un ambiente laboral seguro y saludable,brindando oportunidades de desarrollo profesional a nuestros empleados. <br><br>
-      Estamos comprometidos con prácticas sostenibles que minimicen el impacto ambiental y apoyen el desarrollo de las comunidades donde operamos. <br><br>
-      Estamos firmemente comprometidos con la ética y la responsabilidad social. Trabajamos diligentemente para prevenir el lavado de activos (LA), el financiamiento del terrorismo(FT), el financiamiento de la
-      profileración de armas de destrucción masiva(FPADM), así como la corrupción y el soborno, con el fin de crear valor para nuestros clientes, colaboradores y accionistas, manteniendo los más altos estándares de integridad
-      y transpariencia en todas nuestras operaciones. <br>
-      Valoramos la confianza de nuestros accionistas, trabajando continuamente para asegurar el crecimiento y la estabilidad de la empresa. <br><br>
-      Uno de nuestros objetivos es contribuir al bienestar y progeso de la sociedad, reafirmando nuestro compromiso con el país, nuestros colaboradores,sus familias y nuestros accionistas.
-    </h5>
-  </div>
-</section>
+
+</div>

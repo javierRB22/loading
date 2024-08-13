@@ -9,12 +9,10 @@ import { SharedModule } from './shared/shared.module';
 
 
 import { AppComponent } from './app.component';
-import { CardsComponent } from './components/cards/cards.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { DatosMarpicoComponent } from './pages/datos-marpico/datos-marpico.component';
 import { DiccionarioDatosComponent } from './components/diccionario-datos/diccionario-datos.component';
-import { FormularioTrabajoComponent } from './components/formulario-trabajo/formulario-trabajo.component';
 import { HomeComponent } from './pages/home/home.component';
 import { InformacionComponent } from './components/informacion-contacto/informacion.component';
 import { LicoresComponent } from './components/lineas/licores/licores.component';
@@ -25,7 +23,6 @@ import { PromocionalesComponent } from './components/lineas/promocionales/promoc
 import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.component';
 import { RangerComponent } from './components/lineas/ranger/ranger.component';
 import { SobreNosotrosComponent } from './pages/sobre-nosotros/sobre-nosotros.component';
-import { TrabajaConNosotrosComponent } from './pages/trabaja-con-nosotros/trabaja-con-nosotros.component';
 import { ValoresComponent } from './components/valores/valores.component';
 
 
@@ -37,7 +34,6 @@ import { ValoresComponent } from './components/valores/valores.component';
       ContactoComponent,
       DatosMarpicoComponent,
       DiccionarioDatosComponent,
-      FormularioTrabajoComponent,
       InformacionComponent,
       LicoresComponent,
       MisionVisionComponent,
@@ -47,10 +43,8 @@ import { ValoresComponent } from './components/valores/valores.component';
       QuienesSomosComponent,
       RangerComponent,
       SobreNosotrosComponent,
-      TrabajaConNosotrosComponent,
       ValoresComponent,
     AppComponent,
-    CardsComponent,
     HomeComponent,
 
 

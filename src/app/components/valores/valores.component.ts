@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import AOS from 'aos';
 
 interface Valor {
   imgSrc: string;
@@ -52,4 +53,11 @@ export class ValoresComponent {
         'Tratar a todas las personas por igual, valorar su trabajo y ayudar en la mejora constante de sus errores. Cuando las personas son respetadas se sienten aceptadas y motivadas por seguir con sus trabajos y desarrollando sus capacidades personales y laborales.',
     },
   ];
+
+  ngOnInit() {
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+  }
 }

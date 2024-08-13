@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import AOS from 'aos';
 
 interface MisionVision {
   titulo: string;
@@ -26,4 +27,11 @@ export class MisionVisionComponent {
       imgSrc: 'assets/img/mision-vision/vision1.jpg',
     },
   ];
+
+  ngOnInit() {
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+  }
 }

@@ -20,12 +20,12 @@ export class InformacionComponent implements OnInit {
       cedula: [null, [Validators.required, Validators.min(1)]],
       lugar: ['', [Validators.required, Validators.minLength(6)]],
       linea: ['', [Validators.required]],
-      comentario: ['', [Validators.required, Validators.minLength(6)]]
+      comentario: ['', [Validators.required, Validators.minLength(6)]],
+      terms: [false, Validators.requiredTrue]
     });
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   isValidField(field: string): boolean | null {
     return this.myForm.controls[field].invalid && (this.myForm.controls[field].touched || this.myForm.controls[field].dirty);
@@ -45,13 +45,14 @@ export class InformacionComponent implements OnInit {
 
       } else if (errors['email']) {
         return 'Debe ser un correo electrónico válido';
+
+      } else if (errors['requiredTrue']) {
+        return 'Debes aceptar los términos y condiciones';
       }
     }
 
     return null;
   }
-
-
 
   onSave(): void {
     if (this.myForm.invalid) {
@@ -65,7 +66,7 @@ export class InformacionComponent implements OnInit {
       (response: any) => {
         this.showAlert('Formulario enviado exitosamente', 'success');
         console.log('Formulario enviado exitosamente', response);
-        this.myForm.reset({ telefono: null, cedula: null });
+        this.myForm.reset({ telefono: null, cedula: null, terms: false });
         this.sendingForm = false;
       },
       (error: any) => {
@@ -75,7 +76,6 @@ export class InformacionComponent implements OnInit {
       }
     );
   }
-
 
   private showAlert(message: string, type: 'success' | 'error' | 'warning'): void {
     Swal.fire({
