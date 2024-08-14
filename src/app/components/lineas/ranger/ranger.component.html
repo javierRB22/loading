@@ -2,14 +2,13 @@
   <div data-aos="fade-down">
     <h1 class="text-center" id="lineas"><strong>NUESTRAS LÍNEAS DE NEGOCIO</strong></h1>
   </div>
-  <div class="container ">
+  <div class="container">
     <div class="row g-5 justify-content-between align-items-center" *ngFor="let linea of lineas">
-
 
       <div class="col-md-5" data-aos="fade-up" data-aos-once="false" data-aos-anchor-placement="top-bottom">
         <h2><strong>{{ linea.titulo }}</strong></h2>
         <h4>{{ linea.subtitulo }}</h4>
-        <p>{{ linea.descripcion }}</p>
+        <p [innerHTML]="linea.descripcion"></p>
         <div class="social-icons d-flex justify-content-start align-items-center">
           <a [href]="linea.enlaces.facebook" target="_blank" class="facebook mx-2">
             <i class="bi bi-facebook"></i>
@@ -31,7 +30,6 @@
           <a [href]="linea.enlaces.pagina" target="_blank" class="btn btn-warning" role="button">NUESTRA PÁGINA</a>
         </div>
       </div>
-
 
       <div class="col-md-5" data-aos="fade-up" data-aos-once="false" data-aos-anchor-placement="top-bottom">
         <img [src]="linea.imgSrc" class="img-fluid rounded shadow">

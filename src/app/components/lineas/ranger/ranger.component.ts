@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import AOS from 'aos';
 
-
-
 interface LineaNegocio {
   titulo: string;
   subtitulo: string;
@@ -29,7 +27,7 @@ export class RangerComponent {
       titulo: 'FERRETERÍA',
       subtitulo: 'Línea líder en importación y distribución de Ferretería:',
       descripcion:
-        'Actualmente cuenta con un amplio portafolio de herramientas mecánicas, manuales y eléctricas distinguidas con el nombre RANGER y MP TOOLS. También incluye elementos de protección industrial en su portafolio, distinguidos con la marca MAVERICK SAFETY. Cubre todo el territorio colombiano, brindando exclusividad y facilidades de entregas.',
+        'Actualmente cuenta con un amplio portafolio de herramientas mecánicas, manuales y eléctricas distinguidas con los nombres <strong>RANGER</strong> y <strong>MP TOOLS</strong>. También incluye elementos de protección industrial en su portafolio, distinguidos con la marca <strong>MAVERICK SAFETY</strong>. Cubre todo el territorio colombiano, brindando exclusividad y facilidades de entrega.',
       imgSrc: 'assets/img/lineas/ranger.png',
       enlaces: {
         facebook:  'https://www.facebook.com/rangerqualitytools/?locale=es_LA',
@@ -41,6 +39,7 @@ export class RangerComponent {
       },
     },
   ];
+
   ngOnInit() {
     AOS.init({
       duration: 800,

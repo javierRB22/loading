@@ -17,7 +17,7 @@ export class InformacionComponent implements OnInit {
       name: ['', [Validators.required, Validators.minLength(6)]],
       email: ['', [Validators.required, Validators.email]],
       telefono: [null, [Validators.required, Validators.min(1)]],
-      cedula: [null, [Validators.required, Validators.min(1)]],
+      documento: [null, [Validators.required, Validators.min(1)]],
       lugar: ['', [Validators.required, Validators.minLength(6)]],
       linea: ['', [Validators.required]],
       comentario: ['', [Validators.required, Validators.minLength(6)]],
@@ -66,7 +66,7 @@ export class InformacionComponent implements OnInit {
       (response: any) => {
         this.showAlert('Formulario enviado exitosamente', 'success');
         console.log('Formulario enviado exitosamente', response);
-        this.myForm.reset({ telefono: null, cedula: null, terms: false });
+        this.myForm.reset({ telefono: null, documento: null, terms: false });
         this.sendingForm = false;
       },
       (error: any) => {

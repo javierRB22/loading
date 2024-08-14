@@ -23,7 +23,7 @@ export class LicoresComponent {
     {
       titulo: 'VINOS Y LICORES',
       subtitulo: 'Línea líder en importación y distribución de Vinos y licores:',
-      descripcion: 'Actualmente es importador y distribuidor exclusivo de vinos y licores de productos provenientes de España, Francia, Italia, Estados Unidos, Argentina, Chile, Australia, Reino Unido, Guatemala y México. Nuestra línea cuenta con Regionales que cubren gran parte del territorio colombiano: Bogotá · Bucaramanga · Medellín · Cali · Barranquilla · Cartagena · Santa Marta · Pereira · Manizales · Armenia',
+      descripcion: 'Actualmente es importador y distribuidor exclusivo de vinos y licores de productos provenientes de España, Francia, Italia, Estados Unidos, Argentina, Chile, Australia, Reino Unido, Guatemala y México. Nuestra línea cuenta con regionales que cubren gran parte del territorio colombiano: Bogotá · Bucaramanga · Medellín · Cali · Barranquilla · Cartagena · Santa Marta · Pereira · Manizales · Armenia',
       imgSrc: 'assets/img/lineas/licores.png',
       enlaces: {
         facebook:  'https://www.facebook.com/marpicovinos',
