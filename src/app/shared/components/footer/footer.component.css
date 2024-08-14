@@ -1,6 +1,6 @@
 .footer {
   background-color: #002b49;
-  padding: 20px 0;
+
   border-top: 1px solid #e7e7e7;
 
 }
@@ -17,7 +17,6 @@ li {
   color: white;
   font-size: medium;
   cursor: default;
-  background-color: #002b49;
   border: none;
   font-family: 'Roboto', sans-serif;
 }
@@ -28,7 +27,7 @@ p {
 
 h5 {
   color: white;
-  cursor: default;
+  cursor: pointer;
   font-family: 'Roboto', sans-serif;
 }
 

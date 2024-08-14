@@ -18,7 +18,7 @@
               <li class="list-group-item">MARPICO S.A.S.</li>
               <li class="list-group-item">WORLD TRADE CENTER</li>
               <li class="list-group-item">Calle 100 N. 8A - 49 Torre B Oficina 702</li>
-              <li class="list-group-item">Bogotá D.C.</li>
+              <li class="list-group-item">Bogotá, D.C.</li>
               <li class="list-group-item">(57) 601 6235566</li>
             </ul>
           </div>
@@ -49,27 +49,27 @@
 
               <div class="form-floating mb-3">
                 <select class="form-select" id="floatingSelect" aria-label="Floating label select example"
-                  formControlName="linea">
+                  formControlName="documento">
                   <option value="">Elige una opción</option>
-                  <option value="ferreteria">Cédula de Ciudadanía</option>
-                  <option value="promocionales">Cédula de Extranjería</option>
-                  <option value="vinos-licores">NIT Empresa</option>
-                  <option value="vinos-licores">Número Único de Identificación</option>
-                  <option value="vinos-licores">Tarjeta de Identidad</option>
-                  <option value="vinos-licores">Pasaporte</option>
-                  <option value="vinos-licores">Registro Civil de Nacimiento</option>
-                  <option value="vinos-licores">Documento de Identificación Extranjero</option>
-                  <option value="vinos-licores">Otro no Tipificado</option>
+                  <option value="Cédula de Ciudadanía">Cédula de Ciudadanía</option>
+                  <option value="Cédula de Extranjería">Cédula de Extranjería</option>
+                  <option value="NIT Empresa">NIT Empresa</option>
+                  <option value="Número Único de Identificación">Número Único de Identificación</option>
+                  <option value="Tarjeta de Identidad">Tarjeta de Identidad</option>
+                  <option value="Pasaporte">Pasaporte</option>
+                  <option value="Registro Civil de Nacimiento">Registro Civil de Nacimiento</option>
+                  <option value="Documento de Identificación Extranjero">Documento de Identificación Extranjero</option>
+                  <option value="Otro no Tipificado">Otro no Tipificado</option>
                 </select>
                 <label for="floatingSelect">Tipo de documento</label>
                 <span *ngIf="isValidField('documento')" class="form-text text-danger">Mínimo 1 caracter</span>
               </div>
 
-              <!-- <div class="form-floating mb-3 shadow-sm">
-                <input type="number" class="form-control" formControlName="cedula" id="floatingID" placeholder="number">
-                <label for="floatingID">Número de cédula</label>
-                <span *ngIf="isValidField('cedula')" class="form-text text-danger">Mínimo 1 caracter</span>
-              </div> -->
+              <div class="form-floating mb-3 shadow-sm">
+                <input type="number" class="form-control" formControlName="identificacion" id="floatingID" placeholder="number">
+                <label for="floatingID">Número de documento</label>
+                <span *ngIf="isValidField('identificacion')" class="form-text text-danger">Mínimo 1 caracter</span>
+              </div>
 
               <div class="form-floating mb-3 shadow-sm">
                 <input type="text" class="form-control" formControlName="lugar" id="floatingLocation"
