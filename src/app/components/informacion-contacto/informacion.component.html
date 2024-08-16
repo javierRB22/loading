@@ -26,7 +26,7 @@
       </div>
       <div class="col-sm-6">
         <div class="card shadow w-100" style="width: 35rem;">
-          <h3 class="mt-4 mb-4 text-center"><strong>FORMULARIO DE CONTACTO</strong></h3>
+          <h3 class="mt-4 mb-4 text-center"><strong>Formulario de Contacto</strong></h3>
           <div class="card-body">
             <form [formGroup]="myForm" (ngSubmit)="onSave()" autocomplete="off">
               <div class="form-floating mb-3 shadow-sm">
@@ -62,7 +62,7 @@
                   <option value="Otro no Tipificado">Otro no Tipificado</option>
                 </select>
                 <label for="floatingSelect">Tipo de documento</label>
-                <span *ngIf="isValidField('documento')" class="form-text text-danger">Mínimo 1 caracter</span>
+                <span *ngIf="isValidField('documento')" class="form-text text-danger">Este campo es requerido</span>
               </div>
 
               <div class="form-floating mb-3 shadow-sm">
@@ -101,7 +101,13 @@
                 <span *ngIf="isValidField('terms')" class="form-text text-danger">{{getFieldError('terms')}}</span>
               </div>
               <div class="d-flex justify-content-center d-grid gap-2 col-6 mx-auto">
-                <button type="submit" class="btn btn-primary shadow" [disabled]="sendingForm">Enviar</button>
+                <button type="submit" class="btn btn-primary shadow" [disabled]="sendingForm">
+                  <span *ngIf="!sendingForm">Enviar</span>
+                  <span *ngIf="sendingForm">
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Enviando...
+                  </span>
+                </button>
               </div>
             </form>
           </div>
