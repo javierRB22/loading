@@ -1,4 +1,12 @@
 
+h1, h2, h4, p {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(22, 44, 69);
+  margin-bottom: 30px;
+  cursor: default;
+}
+
+
 .social-icons {
   display: flex;
   align-items: center;
@@ -31,38 +39,13 @@
   color: rgb(31, 118, 231);
 }
 
-.btn-warning:hover {
-  color: #212529;
-  background-color: #e0a800;
-  border-color: #d39e00;
-}
-
 .btn {
   background-color: #FFD800;
   transition: background-color 0.3s ease;
 }
 
-h2 {
-  font-family: 'Roboto', sans-serif;
-  color: rgb(22, 44, 69);
-  margin-bottom: 30px;
-  cursor: default;
-}
-
-h1 {
-  font-family: 'Roboto', sans-serif;
-  color: rgb(22, 44, 69);
-  margin-bottom: 30px;
-  cursor: default;
-}
-
-h4 {
-  font-family: 'Roboto', sans-serif;
-  color: rgb(22, 44, 69);
-  margin-bottom: 30px;
-  cursor: default;
-}
-
-p {
-  font-family: 'Roboto', sans-serif;
+.btn-warning:hover {
+  color: #212529;
+  background-color: #e0a800;
+  border-color: #d39e00;
 }

@@ -1,33 +1,28 @@
-h1 {
+
+h1, li, span, label {
   font-family: "Roboto", sans-serif;
+}
+
+
+h1 {
   color: rgb(22, 44, 69);
   margin-bottom: 30px;
   cursor: default;
 }
 
-li {
-  font-family: "Roboto", sans-serif;
-}
-
-
-span {
-  font-family: "Roboto", sans-serif;
-}
-
-label {
-  font-family: "Roboto", sans-serif;
-}
 
 .card {
   border: none;
   width: 40px;
 }
 
+
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
+
 
 .text {
   position: absolute;
@@ -38,7 +33,6 @@ label {
   text-shadow: 2px 2px 4px #000000;
   font-family: "Roboto", sans-serif;
 }
-
 
 
 .custom-image-container {
@@ -63,6 +57,7 @@ label {
 .btn-primary:hover {
   background-color: #0056b3;
 }
+
 
 .card-img-top.rounded {
   border-radius: 50%;

@@ -7,6 +7,8 @@
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
   cursor: default;
   transition: all 400ms ease;
+  margin-bottom: 20px;
+
 }
 
 .card:hover {
@@ -53,8 +55,6 @@ p{
     margin: 0 auto;
   }
 
-  .card {
-    margin-bottom: 20px;
-  }
+
 }
 

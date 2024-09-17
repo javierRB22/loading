@@ -1,4 +1,15 @@
 
+h2, h4, p, a {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+h2, h4 {
+  color: rgb(22, 44, 69);
+  margin-bottom: 30px;
+  cursor: default;
+}
+
 
 .social-icons {
   display: flex;
@@ -28,36 +39,12 @@
   color: #34a853;
 }
 
+
 .btn {
   background-color: rgba(0, 43, 73, 1);
   transition: background-color 0.3s ease;
-
 }
+
 .btn-primary:hover {
   background-color: #0056b3;
 }
-
-h2 {
-  font-family: 'Roboto', sans-serif;
-  color: rgb(22, 44, 69);
-  margin-bottom: 30px;
-  cursor: default;
-
-}
-
-h4 {
-  font-family: 'Roboto', sans-serif;
-  color: rgb(22, 44, 69);
-  margin-bottom: 30px;
-  cursor: default;
-
-}
-p{
-  font-family: 'Roboto', sans-serif;
-}
-
-a{
-  font-family: 'Roboto', sans-serif;
-}
-
-
